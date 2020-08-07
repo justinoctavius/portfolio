@@ -1,0 +1,19 @@
+.description {
+    opacity: 0;
+    animation: animation 1000ms 500ms linear both;
+}
+
+@keyframes animation {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,59 @@
+/* Text styles */
+.font-1{
+    font-size: 1rem;
+}
+.font-2{
+    font-size: 2rem;
+}
+.font-3{
+    font-size: 3rem;
+}
+.font-4{
+    font-size: 4rem;
+}
+.font-5{
+    font-size: 5rem;
+}
+.pointer{
+    cursor: pointer;
+}
+/* hover styles */
+.hover-info:hover{
+    color: #5bc0de;
+}
+.hover-success:hover{
+    color: #5cb85c;
+}
+.hover-primary:hover{
+    color: #0275d8;
+}
+.hover-secondary:hover{
+    color: aquamarine;
+}
+.hover-danger:hover{
+    color: #d9534f;
+}
+.hover-warning:hover{
+    color: #f0ad4e; 
+}
+.hover-dark:hover{
+    color: #292b2c;
+}
+.hover-light:hover{
+    color: #f7f7f7;
+}
+.active{
+    padding-bottom: 0;
+    border-bottom: .2rem #f0ad4e solid;
+}
+.title{
+    border-bottom: .3rem solid;
+    font-weight: bold;
+}
+/* margins */
+.my-6{
+    margin-top: 6rem;
+}
+.my-7{
+    margin-top: 7rem;
+}

@@ -1,0 +1,55 @@
+.item{
+    background-color: #07569b;
+    font-size: 2rem;
+    color: #f7f7f7;
+    margin-bottom: 1rem;
+}
+
+.html, .css, .javascript, .redux, .react, 
+.angular, .nodejs, .english, .spanish{
+    background-color: #218ff0;
+    display: inline-block;
+    width: 0;
+    padding: .5rem;
+    font-size: 1.5rem;
+    color: #f7f7f7;
+    text-align: right;
+}
+.skill{
+    position: relative;
+    max-width: 100%;
+}
+.item p{
+    background-color: #07569b;
+    padding: .2rem;
+    text-align: center;
+    margin: 0;
+}
+
+.html{
+    width: 85%;
+}
+.css{
+    width: 80%;
+}
+.javascript{
+    width: 80%;
+}
+.react{
+    width: 75%;
+}
+.redux{
+    width: 70%;
+}
+.angular{
+    width: 40%;
+}
+.nodejs{
+    width: 70%;
+}
+.english{
+    width: 75%;
+}
+.spanish{
+    width: 100%;
+}

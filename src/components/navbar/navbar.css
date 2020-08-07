@@ -1,0 +1,11 @@
+
+@media only screen and (max-width: 375px) {
+    .nav-link{
+        font-size: 1.5rem;
+    }
+  }
+@media only screen and (max-width: 300px) {
+    .nav-link{
+        font-size: 1.2rem;
+    }
+  }
