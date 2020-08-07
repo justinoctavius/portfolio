@@ -1,8 +1,13 @@
 import React, { useEffect } from 'react'
 import './home.css'
+import { useLocation } from 'react-router-dom';
 
 function HomeScreen(props) {
     const {setSelect} = props;
+    const location = useLocation();
+    
+    useEffect(() => {
+    },[location])
 
     useEffect(() => {
         setSelect('home');

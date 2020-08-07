@@ -13,6 +13,7 @@ import ProjectsScreen from './screens/projects/ProjectsScreen';
 import Navbar from './components/navbar/Navbar';
 import NextButton from './components/buttons/NextButton';
 import PrevButton from './components/buttons/PrevButton';
+import PageNotFound from './components/PageNotFound/PageNotFound';
 
 function App() {
   const [ select, setSelect ] = useState('home')
@@ -28,7 +29,7 @@ function App() {
             <Route  path="/about" render={(props) => <AboutScreen {...props} select={select} setSelect={setSelect} />} ></Route>
             <Route  path="/contact" render={(props) => <ContactScreen {...props} select={select} setSelect={setSelect} />} ></Route>
             <Route  path="/Projects" render={(props) => <ProjectsScreen {...props} select={select} setSelect={setSelect} />} ></Route>
-            <Route  render={(props) => <HomeScreen {...props} select={select} setSelect={setSelect} />} ></Route>
+            <Route  path="/*" component={PageNotFound}></Route>
           </Switch>
         </main>
         <footer className="text-center p-5">

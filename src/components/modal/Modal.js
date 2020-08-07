@@ -42,7 +42,6 @@ function Modal(props) {
                         </div>
                             {
                                 project.images && project.images.map(image => {
-                                    console.log(image)
                                     return <div className="zoomer carousel-item">
                                             <img src={
                                                 project.name === "E-commerces" 

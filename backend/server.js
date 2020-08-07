@@ -13,7 +13,7 @@ app.use('/',express.static(path.join(__dirname, '..', 'build')))
 app.use('/about',express.static(path.join(__dirname, '..', 'build')))
 app.use('/projects',express.static(path.join(__dirname, '..', 'build')))
 app.use('/contact',express.static(path.join(__dirname, '..', 'build')))
-
+app.use('/*',express.static(path.join(__dirname, '..', 'build')))
 
 //server
 app.listen(PORT, () => console.log('server running on port ' + PORT));
