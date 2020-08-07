@@ -72,7 +72,7 @@ function ProjectsScreen(props) {
                 }
             </div>
                 { showModal &&
-                    <Modal close={setShowModal} images={{ecommerces1,whatsup1,imgShare1,trex1}} project={selectProject} />
+                    <Modal close={setShowModal}  project={selectProject} />
                 }
         </div>
     )
