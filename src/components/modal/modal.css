@@ -1,9 +1,10 @@
 .projectDetail{
-    position: fixed;
+    position: sticky;
     top: 10%;
     left: 20%;
     max-width: 60vw;
     border-radius: .5rem;
+    z-index: 10;
 }
 .projectDetail img{
    width: 100%;

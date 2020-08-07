@@ -24,8 +24,8 @@ import defaultImg from '../../images/defaultImg.jpg'
 function Modal(props) {
     const { project, close } = props
     return (
-        <div className="bounceIn bg-dark projectDetail">
-            <div className="d-flex justify-content-end font-3 m-3 text-danger">
+        <div className="bounceIn bg-dark projectDetail my-1">
+            <div className="p-2 d-flex justify-content-end font-3 m-3 text-danger">
             <i className="pointer hover-danger far fa-times-circle" onClick={ _ => close(false)}></i>
             </div>
             <div className="imgDetail d-flex justify-content-center ">
@@ -82,7 +82,7 @@ function Modal(props) {
                 <h1>{project.name}</h1>
             </div>
             <div className="p-1 d-flex justify-content-center bg-light">
-                <h1 className="p-2">{project.description}</h1>
+                <h1 className="p-2 font-2">{project.description}</h1>
             </div>
             <div className="p-1 bg-dark">
                 <h1 className="d-flex justify-content-center text-light">Technologies used</h1>
