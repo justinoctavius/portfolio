@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import {
   BrowserRouter as Router,
-  Route
+  Route,
+  Switch
 } from "react-router-dom";
 import './App.css';
 
@@ -22,10 +23,13 @@ function App() {
           <Navbar select={select} ></Navbar>
         </header>
         <main>
-          <Route  exact path="/" render={(props) => <HomeScreen {...props} select={select} setSelect={setSelect} />} ></Route>
-          <Route  path="/about" render={(props) => <AboutScreen {...props} select={select} setSelect={setSelect} />} ></Route>
-          <Route  path="/contact" render={(props) => <ContactScreen {...props} select={select} setSelect={setSelect} />} ></Route>
-          <Route  path="/Projects" render={(props) => <ProjectsScreen {...props} select={select} setSelect={setSelect} />} ></Route>
+          <Switch>
+            <Route  exact path="/" render={(props) => <HomeScreen {...props} select={select} setSelect={setSelect} />} ></Route>
+            <Route  path="/about" render={(props) => <AboutScreen {...props} select={select} setSelect={setSelect} />} ></Route>
+            <Route  path="/contact" render={(props) => <ContactScreen {...props} select={select} setSelect={setSelect} />} ></Route>
+            <Route  path="/Projects" render={(props) => <ProjectsScreen {...props} select={select} setSelect={setSelect} />} ></Route>
+            <Route  render={(props) => <HomeScreen {...props} select={select} setSelect={setSelect} />} ></Route>
+          </Switch>
         </main>
         <footer className="text-center p-5">
           <div>
