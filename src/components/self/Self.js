@@ -1,5 +1,5 @@
 import React from 'react';
-import self from '../../images/self/self.jpg';
+import self from '../../images/self/self.jpeg';
 import './self.css'
 
 function Self() {
